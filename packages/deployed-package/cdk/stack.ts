@@ -5,7 +5,7 @@ export const createStack = (scope: cdk.App) => {
   const stack = new cdk.Stack(scope, 'stack')
   new NodejsFunction(stack, 'function', {
     entry: './src/index.ts',
-    handler: '',
+    handler: 'handler',
     bundling: {
       preCompilation: true,
       nodeModules: ['@monorepo/a-package']
