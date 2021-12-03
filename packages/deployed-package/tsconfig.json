@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ES2018",
+    "typeRoots": ["./src/core/definitions.d.ts", "node_modules/@types", "../../node_modules/@types"],
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"],
+      "@monorepo/*": ["../*"],
+    },
+    "declaration": true,
+    "declarationDir": "dist",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "strictPropertyInitialization": false,
+    "outDir": "./dist"
+  },
+  "include": ["src", "cdk"],
+  "exclude": ["public", "dist", "src/scripts", "node_modules", "src/tests/coverage"]
+}
